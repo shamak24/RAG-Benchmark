@@ -1,0 +1,286 @@
+{
+  "description": "Ground-truth QA for riverside_university_handbook.pdf. evidence_text is an exact substring after whitespace collapse. Use this file as questions.json in Colab.",
+  "source_document": "riverside_university_handbook.pdf",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is one Riverside Credit (RC) defined as?",
+      "answer": "Ten notional hours of student effort, including lectures, laboratories, independent study, and assessment.",
+      "ground_truth": "One Riverside Credit represents ten notional hours of student effort, including lectures, laboratories, independent study, and assessment.",
+      "evidence_text": "One Riverside Credit represents ten notional hours of student effort, including lectures, laboratories, independent study, and assessment."
+    },
+    {
+      "id": "q2",
+      "question": "What is the University-wide minimum attendance for each module?",
+      "answer": "Seventy-five percent of scheduled contact sessions actually held, coded RSU-ATT-075.",
+      "ground_truth": "The University attendance minimum is seventy-five percent of scheduled contact sessions for each module, computed on the sessions actually held.",
+      "evidence_text": "The University attendance minimum is seventy-five percent of scheduled contact sessions for each module, computed on the sessions actually held, not on the sessions originally timetabled and later cancelled."
+    },
+    {
+      "id": "q3",
+      "question": "What CGPA is required to continue after the first year?",
+      "answer": "A CGPA of 5.00, coded RSU-GPA-050.",
+      "ground_truth": "The continuation minimum is a CGPA of 5.00 after the first year and after each subsequent year, coded RSU-GPA-050.",
+      "evidence_text": "The continuation minimum is a CGPA of 5.00 after the first year and after each subsequent year, coded RSU-GPA-050."
+    },
+    {
+      "id": "q4",
+      "question": "Does Riverside State University accept Duolingo English Test scores for degree admission in 2026-2027?",
+      "answer": "No. Duolingo scores are not accepted for degree admission in 2026-2027.",
+      "ground_truth": "The University does not accept Duolingo English Test scores for degree admission in 2026-2027.",
+      "evidence_text": "The University does not accept Duolingo English Test scores for degree admission in 2026-2027."
+    },
+    {
+      "id": "q5",
+      "question": "How much is the confirmed-offer seat deposit?",
+      "answer": "Eight thousand rupees, paid to the Finance Office.",
+      "ground_truth": "A seat is reserved after the deposit of eight thousand rupees is received by the Finance Office.",
+      "evidence_text": "A confirmed offer means all academic and language conditions are met and a seat is reserved after the deposit of eight thousand rupees is received by the Finance Office."
+    },
+    {
+      "id": "q6",
+      "question": "What happens to undergraduate resit marks?",
+      "answer": "They are capped at 40, the minimum pass, even if the resit script scores higher.",
+      "ground_truth": "Resit marks on undergraduate modules are capped at 40, the minimum pass, even if the resit script would have scored higher.",
+      "evidence_text": "Resit marks on undergraduate modules are capped at 40, the minimum pass, even if the resit script would have scored higher."
+    },
+    {
+      "id": "q7",
+      "question": "How many Riverside Credits are required for the standard B.Tech award?",
+      "answer": "160 RC, including cores, electives, capstone, and experiential learning.",
+      "ground_truth": "The standard bachelor of technology award requires 160 RC.",
+      "evidence_text": "The standard bachelor of technology award requires 160 RC, including a minimum of 96 RC of named core modules, 32 RC of department electives, 16 RC of open electives, an 8 RC capstone project, and 8 RC of experiential learning such as internship or community studio."
+    },
+    {
+      "id": "q8",
+      "question": "What is the default penalty for contract cheating or examination impersonation?",
+      "answer": "Termination of the programme.",
+      "ground_truth": "Termination is the default for contract cheating and for impersonation in an examination.",
+      "evidence_text": "Termination is the default for contract cheating and for impersonation in an examination."
+    },
+    {
+      "id": "q9",
+      "question": "What are hostel quiet hours on nights before teaching days?",
+      "answer": "23:00 to 06:00.",
+      "ground_truth": "Quiet hours are 23:00 to 06:00 on nights before teaching days and 00:00 to 07:00 on other nights.",
+      "evidence_text": "Quiet hours are 23:00 to 06:00 on nights before teaching days and 00:00 to 07:00 on other nights."
+    },
+    {
+      "id": "q10",
+      "question": "What extra examination time is a common disability adjustment?",
+      "answer": "Twenty-five percent extra time in examinations.",
+      "ground_truth": "Common adjustments include twenty-five percent extra time in examinations.",
+      "evidence_text": "Common adjustments include twenty-five percent extra time in examinations, a smaller room, a reader or scribe, permission to type, rest breaks of ten minutes per hour that do not extend the clock beyond the extra-time cap, and flexibility on attendance condonation for flare-ups of a documented condition."
+    },
+    {
+      "id": "q11",
+      "question": "When must unexplained absences of visa-holding students be reported?",
+      "answer": "After ten consecutive scheduled teaching days, coded RSU-VISA-10, even if overall attendance is still above 75 percent.",
+      "ground_truth": "Unexplained absence of ten consecutive scheduled teaching days must be reported to the visa authorities, coded RSU-VISA-10.",
+      "evidence_text": "unexplained absence of ten consecutive scheduled teaching days must be reported to the visa authorities as required by law, even if the module attendance is still above seventy-five percent overall."
+    },
+    {
+      "id": "q12",
+      "question": "What is the last day to add a module without a late fee in Autumn 2026?",
+      "answer": "14 September, University-wide.",
+      "ground_truth": "14 September is the last day to add a module without a late fee.",
+      "evidence_text": "The academic calendar circular for 2026-2027 lists 14 September as the last day to add a module without a late fee and 28 September as the last day to drop a module without a recorded withdrawal."
+    },
+    {
+      "id": "q13",
+      "question": "What is required to add a module after the add deadline, and when are late-add petitions refused?",
+      "answer": "A late-add petition, module-leader signature for laboratory space, and a late fee of two thousand five hundred rupees. Petitions after teaching week four are refused except for a documented placement visa delay.",
+      "ground_truth": "Late-add petitions after teaching week four are refused except where a placement visa delay is documented.",
+      "evidence_text": "Late-add petitions after teaching week four are refused except where a placement visa delay is documented."
+    },
+    {
+      "id": "q14",
+      "question": "What IELTS score is required for English language admission?",
+      "answer": "IELTS Academic 6.5 overall with no band below 6.0, or TOEFL iBT 88, or a prior English-taught degree from a recognised list.",
+      "ground_truth": "English language competence is demonstrated by IELTS Academic 6.5 overall with no band below 6.0, or TOEFL iBT 88.",
+      "evidence_text": "English language competence is demonstrated by IELTS Academic 6.5 overall with no band below 6.0, or TOEFL iBT 88, or a prior degree taught entirely in English from a list of recognised jurisdictions published by Admissions."
+    },
+    {
+      "id": "q15",
+      "question": "What is the maximum transferable credit toward a 160 RC bachelor award?",
+      "answer": "64 RC. Transfer credit does not enter CGPA except under a bilateral articulation agreement.",
+      "ground_truth": "The maximum transferable credit toward a 160 RC bachelor award is 64 RC.",
+      "evidence_text": "The maximum transferable credit toward a 160 RC bachelor award is 64 RC."
+    },
+    {
+      "id": "q16",
+      "question": "How many W (withdrawal) grades may a bachelor student hold across the programme?",
+      "answer": "At most four W grades across a bachelor programme; a fifth W requires a progress interview.",
+      "ground_truth": "A student may hold at most two W grades in a single academic year and at most four W grades across a bachelor programme.",
+      "evidence_text": "A student may hold at most two W grades in a single academic year and at most four W grades across a bachelor programme."
+    },
+    {
+      "id": "q17",
+      "question": "What CGPA is required for overload above 24 RC in a principal term?",
+      "answer": "At least 8.20 on the ten-point scale, plus Dean approval and a statement that the extra load will not collide with a mandated laboratory.",
+      "ground_truth": "Overload above 24 RC requires a cumulative grade point average of at least 8.20 on the ten-point scale.",
+      "evidence_text": "Overload above 24 RC requires a cumulative grade point average of at least 8.20 on the ten-point scale and a written statement that the extra load will not collide with a mandated laboratory."
+    },
+    {
+      "id": "q18",
+      "question": "What letter grade and points correspond to marks of 90 to 100?",
+      "answer": "O, outstanding, 10 points.",
+      "ground_truth": "O, outstanding, 10 points, marks 90 to 100.",
+      "evidence_text": "O, outstanding, 10 points, marks 90 to 100."
+    },
+    {
+      "id": "q19",
+      "question": "When are late arrivals no longer allowed into an end-of-term examination?",
+      "answer": "Late arrival after thirty minutes is not permitted. Doors close five minutes after the start.",
+      "ground_truth": "The doors close five minutes after the published start; late arrival after thirty minutes is not permitted.",
+      "evidence_text": "The doors close five minutes after the published start; late arrival after thirty minutes is not permitted."
+    },
+    {
+      "id": "q20",
+      "question": "Is a special examination mark capped like a resit?",
+      "answer": "No. A special examination is marked as a first attempt and is not capped.",
+      "ground_truth": "A special examination is marked as a first attempt; the mark is not capped.",
+      "evidence_text": "A special examination is marked as a first attempt; the mark is not capped."
+    },
+    {
+      "id": "q21",
+      "question": "What taught master's credit total is required, and how large is the dissertation?",
+      "answer": "80 RC typically including a 28 RC dissertation.",
+      "ground_truth": "Taught master's programmes require 80 RC, typically 48 RC of taught modules, a 4 RC research methods module, and a 28 RC dissertation.",
+      "evidence_text": "Taught master's programmes require 80 RC, typically 48 RC of taught modules, a 4 RC research methods module, and a 28 RC dissertation."
+    },
+    {
+      "id": "q22",
+      "question": "What happens if a master's dissertation is below B+ even with a high taught CGPA?",
+      "answer": "The award is capped at Pass.",
+      "ground_truth": "A dissertation below B+ caps the award at Pass even if the taught CGPA would have produced Merit or Distinction.",
+      "evidence_text": "A dissertation below B+ caps the award at Pass even if the taught CGPA would have produced Merit or Distinction."
+    },
+    {
+      "id": "q23",
+      "question": "How long are undergraduate examination scripts retained?",
+      "answer": "Thirteen months after the result is published, then securely destroyed, except theses in the library repository.",
+      "ground_truth": "The University retains assessed work for thirteen months after the result is published, then securely destroys it, except for theses which are retained in the library repository.",
+      "evidence_text": "The University retains assessed work for thirteen months after the result is published, then securely destroys it, except for theses which are retained in the library repository."
+    },
+    {
+      "id": "q24",
+      "question": "What is the late coursework penalty per day?",
+      "answer": "Five percent of available marks for each 24-hour period or part thereof, up to five days, then a zero.",
+      "ground_truth": "Late coursework loses five percent of the available marks for each 24-hour period or part thereof after the deadline, up to five days, after which the work is not marked and a zero is recorded.",
+      "evidence_text": "Late coursework loses five percent of the available marks for each 24-hour period or part thereof after the deadline, up to five days, after which the work is not marked and a zero is recorded."
+    },
+    {
+      "id": "q25",
+      "question": "What CGPA is needed to start a 20 RC minor, and by when must it be declared?",
+      "answer": "CGPA 7.00, declared by the start of year three.",
+      "ground_truth": "A minor of 20 RC is available in listed subjects if the student maintains CGPA 7.00 and files the minor declaration by the start of year three.",
+      "evidence_text": "A minor of 20 RC is available in listed subjects if the student maintains CGPA 7.00 and files the minor declaration by the start of year three."
+    },
+    {
+      "id": "q26",
+      "question": "What is the maximum word count of a STEM doctoral thesis excluding references and appendices?",
+      "answer": "Eighty thousand words in STEM and one hundred thousand in humanities.",
+      "ground_truth": "The doctoral thesis has a maximum of eighty thousand words in STEM and one hundred thousand in humanities, excluding references and bound appendices.",
+      "evidence_text": "The doctoral thesis has a maximum of eighty thousand words in STEM and one hundred thousand in humanities, excluding references and bound appendices."
+    },
+    {
+      "id": "q27",
+      "question": "What GPA is required to renew a full tuition waiver scholarship?",
+      "answer": "At least 36 RC that year with a year GPA of 8.00 or higher for full waiver.",
+      "ground_truth": "Merit scholarships are renewed annually if the student completes at least 36 RC that year with a year GPA of 8.00 or higher for full waiver, 7.50 for half waiver, and 7.00 for quarter waiver.",
+      "evidence_text": "Merit scholarships of twenty-five, fifty, or one hundred percent of tuition are awarded at admission using the entrance rank and are renewed annually if the student completes at least 36 RC that year with a year GPA of 8.00 or higher for full waiver, 7.50 for half waiver, and 7.00 for quarter waiver."
+    },
+    {
+      "id": "q28",
+      "question": "What grounds are valid for an academic appeal?",
+      "answer": "Procedural irregularity, bias, and new mitigating evidence that could not reasonably have been submitted earlier. Disagreement with academic judgment is not a ground.",
+      "ground_truth": "Valid grounds are procedural irregularity, bias, and new mitigating evidence that could not reasonably have been submitted earlier. Disagreement with academic judgment about the quality of an answer is not a ground.",
+      "evidence_text": "Valid grounds are procedural irregularity, bias, and new mitigating evidence that could not reasonably have been submitted earlier. Disagreement with academic judgment about the quality of an answer is not a ground."
+    },
+    {
+      "id": "q29",
+      "question": "How long is the window to file an appeal against a module mark?",
+      "answer": "Within ten working days of grade release using form RSU-APL-01.",
+      "ground_truth": "Appeals against a module mark must be filed within ten working days of grade release using form RSU-APL-01.",
+      "evidence_text": "Appeals against a module mark must be filed within ten working days of grade release using form RSU-APL-01."
+    },
+    {
+      "id": "q30",
+      "question": "What is the refund of unused tuition if a student withdraws during teaching weeks one to four?",
+      "answer": "Fifty percent. One hundred percent before induction week, and none after week four.",
+      "ground_truth": "Refunds on withdrawal follow a sliding scale: one hundred percent of unused tuition before induction week, fifty percent during teaching weeks one to four, and none thereafter.",
+      "evidence_text": "Refunds on withdrawal follow a sliding scale: one hundred percent of unused tuition before induction week, fifty percent during teaching weeks one to four, and none thereafter."
+    },
+    {
+      "id": "q31",
+      "question": "May laboratory clashes be tolerated at registration?",
+      "answer": "No. Laboratory clashes are never tolerated. Lecture clashes may be tolerated with a clash plan if recordings exist.",
+      "ground_truth": "Laboratory clashes are never tolerated.",
+      "evidence_text": "Laboratory clashes are never tolerated."
+    },
+    {
+      "id": "q32",
+      "question": "What CGPA band places a first-year student on academic caution rather than termination?",
+      "answer": "CGPA below 5.00 but at or above 4.50.",
+      "ground_truth": "First-year students below 5.00 but at or above 4.50 are placed on academic caution rather than termination and must meet 5.00 by the end of year two.",
+      "evidence_text": "First-year students below 5.00 but at or above 4.50 are placed on academic caution rather than termination and must meet 5.00 by the end of year two."
+    },
+    {
+      "id": "q33",
+      "question": "What is the continuous-assessment bunching code and what does it limit?",
+      "answer": "RSU-CA-BUNCH: two items each worth twenty percent or more may not fall in the same forty-eight hour window for the same cohort year-group, with a notebook exception.",
+      "ground_truth": "Two items each worth twenty percent or more may not fall in the same forty-eight hour window for the same cohort year-group, except a laboratory notebook accumulating all term. The rule is coded RSU-CA-BUNCH.",
+      "evidence_text": "This bunching rule is coded RSU-CA-BUNCH and is a frequent ground of grievance when ignored."
+    },
+    {
+      "id": "q34",
+      "question": "How many hours per week may international students work in term, according to the handbook example?",
+      "answer": "They must not exceed the visa limit, commonly twenty hours per week where that is the national rule.",
+      "ground_truth": "Working hours during term must not exceed the limit printed on the visa, commonly twenty hours per week where that is the national rule.",
+      "evidence_text": "Working hours during term must not exceed the limit printed on the visa, commonly twenty hours per week where that is the national rule."
+    },
+    {
+      "id": "q35",
+      "question": "When can a credit-bearing internship start?",
+      "answer": "Not before the student has passed 60 RC.",
+      "ground_truth": "The internship cannot start before the student has passed 60 RC.",
+      "evidence_text": "The internship cannot start before the student has passed 60 RC."
+    },
+    {
+      "id": "q36",
+      "question": "Who owns coursework produced solely by a student for a taught module?",
+      "answer": "The student, except the University retains a licence to use anonymised examples for teaching and quality review.",
+      "ground_truth": "Coursework produced solely by a student for a taught module is owned by the student, except that the University retains a licence to use anonymised examples for teaching and quality review.",
+      "evidence_text": "Coursework produced solely by a student for a taught module is owned by the student, except that the University retains a licence to use anonymised examples for teaching and quality review."
+    },
+    {
+      "id": "q37",
+      "question": "What CGPA and conditions are required for the Dean's list?",
+      "answer": "Term GPA of 9.00 or higher on at least 16 graded RC, no W that term, and no open integrity case.",
+      "ground_truth": "The Dean's list each term names full-time students with a term GPA of 9.00 or higher on at least 16 graded RC, with no W in that term and no open integrity case.",
+      "evidence_text": "The Dean's list each term names full-time students with a term GPA of 9.00 or higher on at least 16 graded RC, with no W in that term and no open integrity case."
+    },
+    {
+      "id": "q38",
+      "question": "If an assignment worth 40 marks is submitted 26 hours late with a raw score of 32, what mark is recorded?",
+      "answer": "28, because two late periods of five percent of available marks are deducted.",
+      "ground_truth": "An assignment worth 40 marks submitted 26 hours late loses two periods of five percent, so a raw 32 becomes 28.",
+      "evidence_text": "An assignment worth 40 marks submitted 26 hours late loses two periods of five percent, that is ten percent of available marks, so a raw 32 becomes 28."
+    },
+    {
+      "id": "q39",
+      "question": "For 32 lectures held, how many sessions present meet RSU-ATT-075?",
+      "answer": "24 present meets the rule; 23 does not unless condonation applies.",
+      "ground_truth": "Thirty-two lectures held, seventy-five percent is 24.0, so 24 present meets RSU-ATT-075. Twenty-three present does not, unless condonation applies.",
+      "evidence_text": "Thirty-two lectures held, seventy-five percent is 24.0, so 24 present meets RSU-ATT-075."
+    },
+    {
+      "id": "q40",
+      "question": "What statutes last consolidated academic authority at Riverside State University?",
+      "answer": "Ordinance 14 of 2019, vesting academic authority in the Academic Council.",
+      "ground_truth": "The University's statutes were last consolidated in Ordinance 14 of 2019. Ordinance 14 vests academic authority in the Academic Council, operational authority in the Registrar, and disciplinary authority in the Student Conduct Board.",
+      "evidence_text": "Ordinance 14 vests academic authority in the Academic Council, operational authority in the Registrar, and disciplinary authority in the Student Conduct Board."
+    }
+  ]
+}
