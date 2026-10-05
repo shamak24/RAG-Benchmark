@@ -1,8 +1,30 @@
-# RAG Integrity Benchmark (Capstone Phase 1)
+# RAG Benchmarking (Capstone Phase 1)
 
 Compare retrieval pipelines on a fixed academic PDF: how chunking, embeddings, and vector stores affect **finding the exact policy sentence** you marked as ground truth. The notebook also scores **chunk boundary quality** (SBI, MSCR) and whether gold evidence fits in a single chunk (ESI).
 
 This is a **research benchmark**, not a chat product. The main score is **retrieval** (`evidence_hit_rate`), not fluent answers from a large LLM.
+
+### Results at a glance (handbook run)
+
+Screenshots below are exported from notebook **section 15** after a full 18-config run on `riverside_university_handbook.pdf` and `handbook_questions.json`.
+
+| Figure file | What it shows |
+|-------------|----------------|
+| `evidence hit rate.png` | Mean `evidence_hit_rate` by chunker, embedder, and vector store |
+| `chunk boundary integrity.png` | Mean `sbi_pct` vs `mscr_pct` by chunker |
+| `config.png` | `evidence_hit_rate` heatmap: chunker × embedder (mean over FAISS and Chroma) |
+| `sbi vs evidence hit rate.png` | Each of the 18 configs: SBI vs `evidence_hit_rate` |
+| `correlation.png` | Per-config `evidence_hit_rate` vs local `context_recall` |
+
+![Mean evidence hit rate by chunker, embedder, and vector DB](<evidence hit rate.png>)
+
+![SBI and MSCR by chunker](<chunk boundary integrity.png>)
+
+![Evidence hit rate heatmap](<config.png>)
+
+![SBI vs evidence hit rate for all configs](<sbi vs evidence hit rate.png>)
+
+![Evidence hit rate vs context recall per config](<correlation.png>)
 
 ---
 
@@ -40,6 +62,8 @@ That matches a common capstone goal: controlled comparison on a realistic PDF co
 | `RAG_Integrity_Benchmark.ipynb` | **Main deliverable.** Run the full experiment in Colab or Jupyter. |
 | `riverside_university_handbook.pdf` | ~61-page synthetic **Riverside State University** academic handbook (2026-2027). Domain test corpus. |
 | `handbook_questions.json` | **40** questions with `evidence_text` copied from the handbook (substring match after whitespace collapse). |
+| `evidence hit rate.png`, `chunk boundary integrity.png`, `config.png`, `sbi vs evidence hit rate.png`, `correlation.png` | Result figures for reports and README (from section 15). |
+
 
 ---
 
@@ -178,7 +202,7 @@ Same notebook. Install dependencies from section 1. Set `PDF_PATH` and `QUESTION
 
 ## Example results (handbook, full run)
 
-Your run may vary slightly; these are the aggregates from the completed handbook experiment:
+The tables match the charts in the screenshots at the top of this README. Your numbers may vary slightly if you change the PDF or questions; these are from the completed handbook experiment:
 
 | By chunker | Mean `evidence_hit_rate` |
 |------------|---------------------------|
