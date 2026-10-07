@@ -71,39 +71,8 @@ That matches a common capstone goal: controlled comparison on a realistic PDF co
 
 Same PDF and same `handbook_questions.json` for every run. Only the pipeline knobs change.
 
-```
-+------------------+     +------------------------+
-|  PDF (handbook)  |     |  handbook_questions    |
-|  pypdf extract   |     |  .json (40 Q + evidence)|
-+--------+---------+     +------------+-----------+
-         |                            |
-         v                            |
-    full_text                         |
-         |                            |
-         v                            |
-  +------+------+------+              |
-  | fixed | recursive | semantic |   |  chunk once per method
-  +------+------+------+              |
-         |                            |
-         +--> SBI, MSCR, ESI per chunker
-         |
-         v
-  FOR EACH of 18 configs (chunker x embedder x vector_db):
-         |
-         |  embed all chunks (MiniLM / BGE-small / E5-small)
-         |  build index (FAISS or Chroma)
-         |
-         v
-  FOR EACH question:
-         |  similarity search -> top-k chunks (k=3)
-         |  hit if evidence_text in retrieved text (collapsed whitespace)
-         |  optional short extractive answer from top chunks
-         v
-  one row in results_table -> append results.csv
-         |
-         v
-  summary tables (section 14) + plots (section 15)
-```
+![Mean evidence hit rate by chunker, embedder, and vector DB](<arch diag.png>)
+
 
 ### The 18 configurations
 
