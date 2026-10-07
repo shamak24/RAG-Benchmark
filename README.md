@@ -226,7 +226,7 @@ The tables match the charts in the screenshots at the top of this README. Your n
 
 ---
 
-## Project outcomes (what you can claim)
+## Project outcomes
 
 1. A reproducible **18-way** benchmark on a **50+ page** academic-style PDF.
 2. A grounded question set with **substring-verified** evidence.
@@ -236,7 +236,7 @@ The tables match the charts in the screenshots at the top of this README. Your n
 
 ---
 
-## Limitations (say these honestly in review)
+## Limitations
 
 - Synthetic handbook, not a scanned real university PDF.
 - `evidence_hit_rate` is strict substring match; page headers in extract can break spans if questions are not written carefully.
